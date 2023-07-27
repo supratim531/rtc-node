@@ -1,0 +1,20 @@
+{
+  "name": "first-node-app",
+  "version": "1.0.0",
+  "description": "A REST API backend application using MySQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Supratim Majumder",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.5.2",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.32.1",
+    "socket.io": "^4.7.1"
+  }
+}
