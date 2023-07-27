@@ -1,9 +1,9 @@
-const fs = require('fs');
+// const fs = require('fs');
 const cors = require('cors');
 const express = require('express');
 const productRouter = require('./router/productRouter');
 
-let buffer = [];
+// let buffer = [];
 const app = express();
 
 const corsOptions = {
