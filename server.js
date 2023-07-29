@@ -1,4 +1,4 @@
-// const fs = require('fs');
+const fs = require('fs');
 const cors = require('cors');
 const express = require('express');
 const productRouter = require('./router/productRouter');
@@ -7,7 +7,7 @@ const productRouter = require('./router/productRouter');
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:3000'
+  origin: '*'
 };
 
 // middlewares
@@ -81,7 +81,7 @@ io.on('connection', socket => {
   // new calling section
   socket.on('call', data => {
     // console.log(data);
-    console.log(data.sound);
+    // console.log(data.sound);
     // buffer.push(data.sound);
     // console.log(buffer.length);
     // fs.promises.appendFile('demo.webm', data.sound);
